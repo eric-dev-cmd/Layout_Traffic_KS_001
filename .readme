@@ -1,0 +1,2 @@
+ALPACA@MSI MINGW64 ~/KhoSim/Github/Free/Free_Layout_001/assets/sass
+$ sass styles.scss ../css/styles.css --watch
