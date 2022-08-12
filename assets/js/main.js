@@ -1,5 +1,6 @@
 console.log("... logger main.js")
 let btnReceiver = document.querySelector("#btn-receiver");
+let btnReceiver2 = document.querySelector("#btn-receiver-2");
 let inputPassWord = document.querySelector("#inputPass");
 let text = document.querySelector("#btn-content");
 let btnText = document.querySelector("#btn-text");
@@ -13,9 +14,17 @@ btnReceiver.addEventListener("click", () => {
     text.hidden = true;
   }
 });
+btnReceiver2.addEventListener("click", () => {
+  if (text.hidden) {
+    text.hidden = false;
+  } else {
+    text.hidden = true;
+  }
+});
+
 var alertError = document.getElementById("alertError")
 alertError.style.display = "none";
-console.log("inputPassWord", inputPassWord.value)
+
 function errorMessage() {
   var error = document.getElementById("error")
   if (isNaN(inputPassWord.value))
@@ -27,3 +36,13 @@ function errorMessage() {
       error.textContent = ""
   }
 }
+
+function copy() {
+  var copyText = document.querySelector("#inputCopy");
+  var copyButton = document.querySelector("#btnCopy");
+  copyText.select();
+  document.execCommand("copy");
+  copyButton.innerText = "Copied!";
+}
+
+document.querySelector("#btnCopy").addEventListener("click", copy);

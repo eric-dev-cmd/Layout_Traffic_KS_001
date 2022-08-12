@@ -24,6 +24,10 @@ body {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
 }
 
+.height-freefire {
+  height: 464px;
+}
+
 .card-header-a {
   position: relative;
   height: 220px;
@@ -436,8 +440,12 @@ li a:hover {
 
 .item-top {
   width: 32%;
-  padding-bottom: 18%; /* 32:18, i.e. 16:9 */
+  padding-bottom: 2%; /* 32:18, i.e. 16:9 */
   margin-bottom: 2%; /* (100-32*3)/2 */
+}
+
+.bg-card {
+  background: #dbd5d5;
 }
 
 /* Portrait */
