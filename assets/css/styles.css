@@ -104,7 +104,7 @@ svg .polygon {
   right: 25px;
   width: 45px;
   height: 45px;
-  background: linear-gradient(to left, #DC3545, #84151C);
+  background: linear-gradient(to left, #dc3545, #84151c);
   border-radius: 100%;
   box-shadow: 0 10px 15px rgba(110, 221, 235, 0.53);
 }
@@ -141,7 +141,7 @@ svg .polygon {
 
 .bio {
   font-size: 14px;
-  color: #7B7B7B;
+  color: #7b7b7b;
   font-weight: 300;
   margin: 10px auto;
   line-height: 20px;
@@ -172,7 +172,7 @@ svg .polygon {
   width: 33.3333333333%;
   float: left;
   text-align: center;
-  border-left: 1px solid #EBEBEB;
+  border-left: 1px solid #ebebeb;
 }
 
 .stat .label {
@@ -181,7 +181,7 @@ svg .polygon {
   font-weight: 300;
   font-size: 11px;
   letter-spacing: 1px;
-  color: #95989A;
+  color: #95989a;
 }
 
 .stat .value {
@@ -210,7 +210,7 @@ svg .polygon {
 .c-content-title-1 > .c-line-center {
   width: 40px;
   height: 3px;
-  background-color: #0A58C9;
+  background-color: #0a58c9;
   margin: 0 auto 10px auto;
 }
 
@@ -256,7 +256,7 @@ svg .polygon {
 .content-item-name {
   font-weight: 600;
   font-size: 1rem;
-  color: #6A0001;
+  color: #6a0001;
 }
 
 .footer-bottom {
@@ -284,7 +284,8 @@ svg .polygon {
 .bottom-address {
   margin-top: 20px;
 }
-.bottom-address p, .bottom-address .bottom-link p {
+.bottom-address p,
+.bottom-address .bottom-link p {
   margin: 0 0 5px;
 }
 
@@ -298,7 +299,8 @@ a {
   background-color: transparent;
 }
 
-.bottom-address p, .bottom-link p {
+.bottom-address p,
+.bottom-link p {
   margin: 0 0 5px;
 }
 
@@ -319,7 +321,8 @@ ul {
 li {
   float: left;
 }
-li a, li span {
+li a,
+li span {
   display: block;
   color: white;
   text-align: center;
@@ -331,7 +334,7 @@ li a:hover {
 }
 
 .about-name {
-  color: #6A0001;
+  color: #6a0001;
   font-size: 23px;
   font-weight: 600;
   margin: 0 0 20px;
@@ -357,18 +360,18 @@ li a:hover {
   color: #971719 !important;
 }
 .about-product .id {
-  background: #DC3545;
+  background: #dc3545;
 }
 
 .bg-name {
-  background: #E4E4E4;
+  background: #e4e4e4;
 }
 
 .bg-thanks {
-  background-color: #E4E4E4;
-  border-color: #E4E4E4;
-  border-left: 4.5px solid #DC3545;
-  color: #DC3545;
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+  border-left: 4.5px solid #dc3545;
+  color: #dc3545;
   padding: 15px;
   position: relative;
   text-align: left;
@@ -383,7 +386,7 @@ li a:hover {
 }
 
 .border-danger-hover:focus {
-  border-color: #DC3545 !important;
+  border-color: #dc3545 !important;
   box-shadow: 0 0 0 0.25rem rgba(196, 9, 49, 0.25) !important;
 }
 
@@ -399,10 +402,10 @@ li a:hover {
 }
 
 .nav-link {
-  color: #DC3545;
+  color: #dc3545;
 }
 .nav-link.active {
-  background: #DC3545 !important;
+  background: #dc3545 !important;
   color: #fff !important;
 }
 
@@ -451,6 +454,34 @@ li a:hover {
 
 .bg-card {
   background: #dbd5d5;
+}
+
+.mp-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-nick {
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.875rem !important;
+  border-radius: 0.2rem !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-nick:hover {
+  background: #007bff;
 }
 
 /* Portrait */
