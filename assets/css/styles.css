@@ -34,10 +34,7 @@ body {
 }
 .img-wrapper img {
   width: 100%;
-  position: absolute;
   height: 100%;
-  background-size: cover;
-  background-position: top;
 }
 
 .card-header:after {
@@ -459,29 +456,6 @@ li a:hover {
 .mp-0 {
   margin: 0;
   padding: 0;
-}
-
-.btn-nick {
-  text-transform: uppercase;
-  padding: 0.25rem 0.5rem !important;
-  font-size: 0.875rem !important;
-  border-radius: 0.2rem !important;
-  background-color: #dc3545 !important;
-  border-color: #dc3545 !important;
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.btn-nick:hover {
-  background: #007bff;
 }
 
 /* Portrait */
