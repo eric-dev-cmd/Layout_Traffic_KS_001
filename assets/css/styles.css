@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 14px !important;
   font-family: "Exo 2", sans-serif;
   color: #333;
 }
@@ -446,6 +446,24 @@ li a:hover {
 .mp-0 {
   margin: 0;
   padding: 0;
+}
+
+.simdep_title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.simdep_content {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  text-rendering: geometricPrecision;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
 }
 
 /* Portrait */
