@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
    <head>
-      <meta charset="UTF-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
       <link rel="stylesheet" href="./assets/css/styles.css" />
       <title>Trang chủ</title>
    </head>
@@ -1281,16 +1281,90 @@
          </footer>
       </div>
       <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="./assets//boostrap/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
       />
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
       <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       />
-      <script defer type="text/javascript" src="assets/js/lazyload.js"></script>
+      <script type="text/javascript">
+         const load = (img)=>{
+  const url = img.getAttribute('data-src')
+  img.setAttribute("src", url)
+  img.removeAttribute('data-src')
+}
+document.addEventListener("DOMContentLoaded", function () {
+  if ("IntersectionObserver" in window) {
+    var lazyImages = document.querySelectorAll('[data-src]')
+    let lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          load(entry.target)
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazyImages.forEach(function (lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Possibly fall back to event handlers here
+  }
+});
+console.log("... logger main.js")
+let btnReceiver = document.querySelector("#btn-receiver");
+let btnReceiver2 = document.querySelector("#btn-receiver-2");
+let inputPassWord = document.querySelector("#inputPass");
+let text = document.querySelector("#btn-content");
+let btnText = document.querySelector("#btn-text");
+
+text.hidden = true;
+
+btnReceiver.addEventListener("click", () => {
+  if (text.hidden) {
+    text.hidden = false;
+  } else {
+    text.hidden = true;
+  }
+});
+btnReceiver2.addEventListener("click", () => {
+  if (text.hidden) {
+    text.hidden = false;
+  } else {
+    text.hidden = true;
+  }
+});
+
+var alertError = document.getElementById("alertError")
+alertError.style.display = "none";
+
+function errorMessage() {
+  var error = document.getElementById("error")
+  if (isNaN(inputPassWord.value))
+  {
+      alertError.style.display = "block";
+      error.textContent = "Mã của bạn không chính xác hoặc đã hết hạn!"
+      alertError.hidden = false;
+  } else {
+      error.textContent = ""
+  }
+}
+
+function copy() {
+  var copyText = document.querySelector("#inputCopy");
+  var copyButton = document.querySelector("#btnCopy");
+  copyText.select();
+  document.execCommand("copy");
+  copyButton.innerText = "Copied!";
+}
+
+document.querySelector("#btnCopy").addEventListener("click", copy);
+      </script>
    </body>
 </html>
