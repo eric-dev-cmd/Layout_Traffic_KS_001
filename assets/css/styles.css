@@ -221,6 +221,17 @@ svg .polygon {
   border: 1px solid #b32235;
 }
 
+.container #wrapper-nav {
+  overflow: auto !important;
+  white-space: nowrap !important;
+}
+.container #wrapper-nav .content {
+  display: inline-block !important;
+  min-width: 170px !important;
+  padding-left: 12px !important;
+  width: 32% !important;
+}
+
 .content i {
   float: left;
   margin-right: 10px;
