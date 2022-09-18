@@ -4,6 +4,9 @@
 //   and (-webkit-min-device-pixel-ratio: 2)
 //   and (orientation: portrait) 
   {
+    .d-ip-none{
+        display: none !important;
+    }
     .flex-container{
         flex-direction: column;
     }
@@ -79,6 +82,9 @@
   and (min-width: 768px) 
   and (max-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .d-ip-none{
+        display: none !important;
+    }
     .pt-12{
         padding-top: 12px;
         padding-bottom: 12px;

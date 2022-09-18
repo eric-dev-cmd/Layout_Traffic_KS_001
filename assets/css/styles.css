@@ -604,6 +604,9 @@ img {
 
 /* Portrait */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .d-ip-none {
+    display: none !important;
+  }
   .flex-container {
     flex-direction: column;
   }
@@ -676,6 +679,9 @@ img {
 }
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .d-ip-none {
+    display: none !important;
+  }
   .pt-12 {
     padding-top: 12px;
     padding-bottom: 12px;
