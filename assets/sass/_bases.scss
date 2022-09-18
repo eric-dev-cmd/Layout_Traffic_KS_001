@@ -443,3 +443,123 @@ li {
   line-height: 24px;
   margin-bottom: 5px;
 }
+.blog-list-style-5 {
+  width: 100%;
+  & .blog-item {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  & .blog-image {
+    display: inline-block;
+    width: 30%;
+    // max-width: 184px;
+    // height: 100%;
+  }
+  & .blog-title-wraper {
+    display: inline-block;
+    padding-left: 0.3rem;
+    width: 68%;
+  }
+  & .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-title {
+    font-size: 1rem;
+  }
+  .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-title {
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+  }
+  & .blog-title-wraper .blog-info {
+    bottom: 0;
+    position: absolute;
+    width: 69%;
+  }
+}
+.blog-title{
+  font-weight: 600;
+  color: #333;
+  & a:hover {
+    color: #bd1129 !important;
+  }
+}
+.text-body {
+  color: #212529!important;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.w-100 {
+  width: 100%!important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.titlecom-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.blog-item .w {
+  margin-top: 10px;
+}
+.blog-main {
+  margin-bottom: 20px;
+  position: relative;
+  & .blog-info {
+    margin-left: 75px;
+  }
+}
+.blog-date {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  background: #bd1129;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.blog-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 7px;
+  color: #333;
+  line-height: 1.4;
+  & a{
+    color: #333;
+  }
+}
+.blog-author {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.blog-desc {
+  color: #333;
+  text-align: justify;
+}
+.blog-others {
+  margin-top: 20px;
+}
+.blog-others-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+.blog-page .blog-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.blog-others .blog-title {
+  max-height: 45px;
+  overflow: hidden;
+  margin: 0;
+}
