@@ -707,5 +707,10 @@ img {
     width: 33% !important;
   }
 }
-
+h1{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=styles.css.map */
