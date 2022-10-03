@@ -343,11 +343,11 @@ li a:hover {
 }
 
 .fs-15 {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .fs-20 {
@@ -618,6 +618,35 @@ h1 {
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.section-heading .h-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.section-heading.sh-t1 > .h-text {
+  color: #992556 !important;
+  font-weight: 600;
+}
+
+.section-heading.sh-t1 .h-text {
+  display: inline-block;
+  padding: 4px 17px 4px 0;
+  color: #444;
+  background: #fff;
+}
+
+.section-heading.sh-t1.sh-s1 .h-text {
+  padding-right: 8px !important;
+}
+
+.form-select:focus {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.25rem rgba(196, 9, 49, 0.25) !important;
 }
 
 /* Portrait */
