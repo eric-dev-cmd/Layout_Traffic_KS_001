@@ -26,7 +26,7 @@ function copyModal() {
 
            if (!isNaN(inputPassItpark.value)) {
                alertError2.style.display = "block";
-               error2.textContent = "Mã pass chưa chính xác hoặc hết hạn. Mã pass cập nhật 10 phút 1 lần. Có thể bạn lấy đúng vào thời gian cập nhật."
+               error2.textContent = "Vui lòng nhập mã!"
                alertError2.hidden = false;
            }else {
             error.textContent = ""
@@ -34,7 +34,7 @@ function copyModal() {
         }
            if (!isNaN(inputName.value)) {
                alertError1.style.display = "block";
-               error1.textContent = "Họ và tên của bạn không được để trống!"
+               error1.textContent = "Vui lòng nhập họ và tên!"
                alertError1.hidden = false;
            } else {
                error.textContent = ""
