@@ -14,7 +14,7 @@
       <title>IT Park</title>
    </head>
    <body>
-      <div class="app">
+      <div class="app my-2">
          <header>
             <div class="container">
                <h1 class="section-heading sh-t1 sh-s1">
@@ -31,8 +31,11 @@
                            <div class="step-1">
                               <span class="badge bg-white text-dark fs-14 my-2 text-dark fs-16 p-0">Họ và tên: </span>
                               <div class="mb-3">
+                                 <div class="alert alert-danger" id="alertError1" role="alert">
+                                    <span class="text-danger fw-700" id="error1"></span>
+                                 </div>
                                  <div class="input-group mb-3">
-                                    <input id="inputCopy" class="form-control border-danger-hover fw-bold" type="text">
+                                    <input id="inputName" class="form-control border-danger-hover fw-bold" type="text">
                                  </div>
                               </div>
                            </div>
@@ -41,8 +44,8 @@
                               <div class="mb-3">
                                  <div class="input-group mb-3">
                                     <select class="form-select" aria-label="Default select example">
-                                       <option selected>---</option>
-                                       <option value="1">Liên Quân Rank Tinh Anh</option>
+                                       <option>---</option>
+                                       <option value="1" selected>Liên Quân Rank Tinh Anh</option>
                                        <option value="2">Liên Quân Rank Kim Cương</option>
                                        <option value="3">Liên Quân Rank Bạch Kim</option>
                                        <option value="4">Liên Quân Rank Vàng</option>
@@ -56,19 +59,22 @@
                            <div class="step-1">
                               <span class="badge bg-white text-dark fs-14 my-2 text-dark fs-16 p-0">Mã pass: </span>
                               <div class="mb-3">
+                                 <div class="alert alert-danger" id="alertError2" role="alert">
+                                    <span class="text-danger fw-700" id="error2"></span>
+                                 </div>
                                  <div class="input-group mb-3">
-                                    <input id="inputCopy" class="form-control border-danger-hover fw-bold" type="text">
+                                    <input id="inputPassItpark" class="form-control border-danger-hover fw-bold" type="text">
                                  </div>
                               </div>
                            </div>
                            <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                              Lưu ý : Itpark cũng sẽ không chịu trách nhiệm với hành vi người dùng khi sử dụng nick Game.
+                              <label class="form-check-label fw-bold" for="flexCheckDefault">
+                                 Lưu ý : Itpark cũng sẽ không chịu trách nhiệm với hành vi người dùng khi sử dụng nick Game.
                               </label>
                            </div>
                            <div class="mt-3">
-                              <button type="button" class="btn btn-danger">Nhận nick</button>
+                              <button id="btn-itpark" type="button" class="btn btn-danger" onclick="errorMessage()">Nhận nick</button>
                            </div>
                         </fieldset>
                      </form>
@@ -201,37 +207,39 @@
          let btnReceiver = document.querySelector("#btn-receiver");
          let btnReceiver2 = document.querySelector("#btn-receiver-2");
          let inputPassWord = document.querySelector("#inputPass");
-         // let text = document.querySelector("#btn-content");
          let btnText = document.querySelector("#btn-text");
-         
-         // text.hidden = true;
-         
-         // btnReceiver.addEventListener("click", () => {
-         //   if (text.hidden) {
-         //       text.hidden = false;
-         //   } else {
-         //       text.hidden = true;
-         //   }
-         // });
-         // btnReceiver2.addEventListener("click", () => {
-         //   if (text.hidden) {
-         //       text.hidden = false;
-         //   } else {
-         //       text.hidden = true;
-         //   }
-         // });
-         
+         let btnItpark = document.querySelector("#btn-itpark");
+         let inputName = document.querySelector("#inputName");
+         let inputPassItpark = document.querySelector("#inputPassItpark");
+
+         console.log(">>>> btnItpark", btnItpark)
          var alertError = document.getElementById("alertError")
+         var alertError1 = document.getElementById("alertError1")
+         var alertError2 = document.getElementById("alertError2")
          alertError.style.display = "none";
+         alertError1.style.display = "none";
+         alertError2.style.display = "none";
          
          function errorMessage() {
            var error = document.getElementById("error")
+           var error1 = document.getElementById("error1")
+           var error2 = document.getElementById("error2")
+           if (isNaN(inputPassItpark.value)) {
+               alertError2.style.display = "block";
+               error2.textContent = "Mã pass chưa chính xác hoặc hết hạn. Mã pass cập nhật 10 phút 1 lần. Có thể bạn lấy đúng vào thời gian cập nhật."
+               alertError2.hidden = false;
+           }
            if (isNaN(inputPassWord.value)) {
                alertError.style.display = "block";
                error.textContent = "Mã của bạn không chính xác hoặc đã hết hạn!"
                alertError.hidden = false;
+           } else if (isNaN(inputName.value)) {
+               alertError1.style.display = "block";
+               error1.textContent = "Họ và tên của bạn không được để trống!"
+               alertError1.hidden = false;
            } else {
                error.textContent = ""
+               alertError1.hidden = true;
            }
          }
          
