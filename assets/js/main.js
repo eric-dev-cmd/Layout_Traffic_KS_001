@@ -1,5 +1,5 @@
 console.log("... logger main.js")
-console.log("aaa", document.querySelector("#btnCopyModal"))
+console.log("document.querySelector", document.querySelector("#btnCopyModal"))
 
 let btnReceiver = document.querySelector("#btn-receiver");
 let btnReceiver2 = document.querySelector("#btn-receiver-2");
@@ -7,22 +7,7 @@ let inputPassWord = document.querySelector("#inputPass");
 let text = document.querySelector("#btn-content");
 let btnText = document.querySelector("#btn-text");
 
-text.hidden = true;
 
-btnReceiver.addEventListener("click", () => {
-  if (text.hidden) {
-    text.hidden = false;
-  } else {
-    text.hidden = true;
-  }
-});
-btnReceiver2.addEventListener("click", () => {
-  if (text.hidden) {
-    text.hidden = false;
-  } else {
-    text.hidden = true;
-  }
-});
 
 var alertError = document.getElementById("alertError")
 alertError.style.display = "none";
@@ -49,13 +34,21 @@ function copy() {
 
 document.querySelector("#btnCopy").addEventListener("click", copy);
 
-function copyModal() {
-  var copyText = document.querySelector("#inputCopyModal");
-  var copyButton = document.querySelector("#btnCopyModal");
-  copyText.select();
-  document.execCommand("copy");
-  copyButton.innerText = "Copied!";
+if(text){
+  text.hidden = true;
 }
-document.querySelector("#btnCopyModal").addEventListener("click", ()=>{
-  console.log("ttv")
+
+btnReceiver.addEventListener("click", () => {
+  if (text.hidden) {
+    text.hidden = false;
+  } else {
+    text.hidden = true;
+  }
+});
+btnReceiver2.addEventListener("click", () => {
+  if (text.hidden) {
+    text.hidden = false;
+  } else {
+    text.hidden = true;
+  }
 });

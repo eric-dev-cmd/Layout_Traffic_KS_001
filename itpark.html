@@ -6,10 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" href="./assets/css/styles.css" />
-      <!-- <link
-         href="./assets/css/bootstrap.min.css"
-         rel="stylesheet"
-         /> -->
       <link href="./assets/css/font.css" rel="stylesheet">
       <title>IT Park</title>
    </head>
@@ -73,46 +69,28 @@
                                  Lưu ý : Itpark cũng sẽ không chịu trách nhiệm với hành vi người dùng khi sử dụng nick Game.
                               </label>
                            </div>
-                           <div class="mt-3">
-                              <button id="btn-itpark" type="button" class="btn btn-danger" onclick="errorMessage()">Nhận nick</button>
+                           <div class="mt-3 text-center">
+                              <button id="btn-itpark" type="button" class="btn btn-primary" onclick="errorMessage()">Nhận nick</button>
                            </div>
                         </fieldset>
                      </form>
                   </div>
                   <div class="col-12 mt-3">
                      <section class="text-center">
-                        <button type="button" class="btn btn-danger text-capitalize"  data-bs-toggle="modal" data-bs-target="#exampleModal">Hướng dẫn lấy pass</button>
+                        <button type="button" class="btn btn-danger text-capitalize fw-700"  data-bs-toggle="modal" data-bs-target="#exampleModal">Hướng dẫn lấy pass</button>
                      </section>
                      <!-- Modal -->
                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-xl modal-dialog modal-dialog-centered">
                            <div class="modal-content">
                               <div class="modal-header">
-                                 <h5 class="modal-title text-uppercase" id="exampleModalLabel">Hướng dẫn lấy pass</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
                                  <div class="row">
                                     <div class="col-12">
-                                       <div id="loicamon">
-                                          <div class="border rounded mb-3">
-                                             <div class="bg-thanks">
-                                                <b>Lời cảm ơn</b>
-                                                <p>Phần mềm hoàn toàn miễn phí, bọn mình không sử dụng link rút gọn kiếm tiền hay đặt AdSense. Nhưng để có chi phí duy trì hoạt động của website, mong các bạn thông cảm và dành 1-2 phút làm theo hướng dẫn để lấy mã xác minh tải về nhé!</p>
-                                             </div>
-                                          </div>
-                                       </div>
                                        <div class="">
-                                          <p class="text-decoration-underline txt-title text-center">Đợi một chút, bạn cần pass</p>
-                                       </div>
-                                       <div class="">
-                                          <div class="alert alert-danger" id="alertError" role="alert">
-                                             <span class="text-danger fw-700" id="error"></span>
-                                          </div>
-                                          <div class="input-group mb-3 fw-bold">
-                                             <input id="inputPass" type="text" class="form-control border-danger-hover" placeholder="Nhập Pass xác nhận vào đây!" onblur="getVal()">
-                                             <button class="btn btn-danger btn-sm text-uppercase w-102" type="submit" onclick="errorMessage()">Xác nhận</button>
-                                          </div>
+                                          <p class="text-decoration-underline txt-title text-center fw-700">Hướng dẫn lấy pass</p>
                                        </div>
                                        <p class="d-block fs-20 mb-3"><strong><span class="text-decoration-underline text-danger">Làm theo hướng dẫn bên dưới để lấy Pass nhập vào ô bên trên:</span></strong></p>
                                        <div class="guide-list">
@@ -147,25 +125,6 @@
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="col-12 mt-3">
-                     <h2>VĂN BẢN HƯỚNG DẪN</h2>
-                     <p>=>> Bạn xem hướng dẫn video thì kéo xuống dưới nhé!</p>
-                     <p><strong>Bước 1</strong> : Bạn Hãy Bấm <span style="color: #ff0000;">Theo Dõi Trang</span> Rồi Tiếp Tục Bước 2 Nhé.</p>
-                     <p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftamsugiadinhcuocsong&amp;tabs=timeline&amp;width=340&amp;height=331&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="331" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-mce-fragment="1"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">&#xFEFF;</span></iframe></p>
-                     <p>Bước 2 : Truy cập <span style="color: #ff0000;"><strong>Google.com</strong></span></p>
-                     <p>Bước 3 : Tìm kiếm&nbsp; “<span style="color: #ff0000;"><strong>hút bể phốt</strong></span>” rồi nhấn tìm kiếm.</p>
-                     <p>Bước 4 : Tìm tới bài viết : <span style="color: #ff0000;"><strong>#1 Hút bể phốt giá rẻ tại Hà Nội【 Tràng An 】- 5O.OOOđ /m3</strong></span>. Giống với link phía dưới nhé.</p>
-                     <p><img class="size-full wp-image-25337 aligncenter b-loaded" alt="" width="752" height="125" srcset="http://itpark.com.vn/wp-content/uploads/2022/07/hutbephotds.png 752w, http://itpark.com.vn/wp-content/uploads/2022/07/hutbephotds-300x50.png 300w, http://itpark.com.vn/wp-content/uploads/2022/07/hutbephotds-750x125.png 750w" sizes="(max-width: 752px) 100vw, 752px" src="http://itpark.com.vn/wp-content/uploads/2022/07/hutbephotds.png"></p>
-                     <p>Bước 5 : Sau khi truy cập vào link rồi bạn hãy kéo xuống và tìm tới mã pass nhé.</p>
-                     <p>Bước 6 : Sau quay lại website game để nhận tài khoản game.</p>
-                     <p><a href="https://www.google.com/" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external"><img class="size-full wp-image-24916 aligncenter b-loaded" alt="" width="600" height="50" srcset="http://itpark.com.vn/wp-content/uploads/2022/05/adfasdf.png 600w, http://itpark.com.vn/wp-content/uploads/2022/05/adfasdf-300x25.png 300w" sizes="(max-width: 600px) 100vw, 600px" src="http://itpark.com.vn/wp-content/uploads/2022/05/adfasdf.png"></a></p>
-                     <h2>VIDEO HƯỚNG DẪN</h2>
-                     <div style="width: 854px;" class="wp-video">
-                        <iframe width="854" height="315"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                        </iframe>
-                     </div>
-                     </div> -->
                </div>
             </div>
          </main>
@@ -175,85 +134,7 @@
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
          />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script type="text/javascript">
-         const load = (img) => {
-           const url = img.getAttribute('data-src')
-           img.setAttribute("src", url)
-           img.removeAttribute('data-src')
-         }
-         document.addEventListener("DOMContentLoaded", function() {
-           if ("IntersectionObserver" in window) {
-               var lazyImages = document.querySelectorAll('[data-src]')
-               let lazyImageObserver = new IntersectionObserver(function(
-                   entries,
-                   observer
-               ) {
-                   entries.forEach(function(entry) {
-                       if (entry.isIntersecting) {
-                           load(entry.target)
-                           observer.unobserve(entry.target);
-                       }
-                   });
-               });
-         
-               lazyImages.forEach(function(lazyImage) {
-                   lazyImageObserver.observe(lazyImage);
-               });
-           } else {
-               // Possibly fall back to event handlers here
-           }
-         });
-         console.log("... logger main.js")
-         let btnReceiver = document.querySelector("#btn-receiver");
-         let btnReceiver2 = document.querySelector("#btn-receiver-2");
-         let inputPassWord = document.querySelector("#inputPass");
-         let btnText = document.querySelector("#btn-text");
-         let btnItpark = document.querySelector("#btn-itpark");
-         let inputName = document.querySelector("#inputName");
-         let inputPassItpark = document.querySelector("#inputPassItpark");
-
-         console.log(">>>> btnItpark", btnItpark)
-         var alertError = document.getElementById("alertError")
-         var alertError1 = document.getElementById("alertError1")
-         var alertError2 = document.getElementById("alertError2")
-         alertError.style.display = "none";
-         alertError1.style.display = "none";
-         alertError2.style.display = "none";
-         
-         function errorMessage() {
-           var error = document.getElementById("error")
-           var error1 = document.getElementById("error1")
-           var error2 = document.getElementById("error2")
-           if (isNaN(inputPassItpark.value)) {
-               alertError2.style.display = "block";
-               error2.textContent = "Mã pass chưa chính xác hoặc hết hạn. Mã pass cập nhật 10 phút 1 lần. Có thể bạn lấy đúng vào thời gian cập nhật."
-               alertError2.hidden = false;
-           }
-           if (isNaN(inputPassWord.value)) {
-               alertError.style.display = "block";
-               error.textContent = "Mã của bạn không chính xác hoặc đã hết hạn!"
-               alertError.hidden = false;
-           } else if (isNaN(inputName.value)) {
-               alertError1.style.display = "block";
-               error1.textContent = "Họ và tên của bạn không được để trống!"
-               alertError1.hidden = false;
-           } else {
-               error.textContent = ""
-               alertError1.hidden = true;
-           }
-         }
-         
-         
-         function copyModal() {
-           var copyText = document.querySelector("#inputCopyModal");
-           var copyButton = document.querySelector("#btnCopyModal");
-           copyText.select();
-           document.execCommand("copy");
-           copyButton.innerText = "Copied!";
-         }
-         
-         document.querySelector("#btnCopyModal").addEventListener("click", copyModal);
-      </script>
-      <!-- <script src="./assets/js/main.js"></script> -->
+      <script src="assets/js/lazyload.js"></script>
+      <script src="./assets/js/itpark.js"></script>
    </body>
 </html>
