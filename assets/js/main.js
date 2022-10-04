@@ -1,4 +1,6 @@
 console.log("... logger main.js")
+console.log("aaa", document.querySelector("#btnCopyModal"))
+
 let btnReceiver = document.querySelector("#btn-receiver");
 let btnReceiver2 = document.querySelector("#btn-receiver-2");
 let inputPassWord = document.querySelector("#inputPass");
@@ -46,3 +48,14 @@ function copy() {
 }
 
 document.querySelector("#btnCopy").addEventListener("click", copy);
+
+function copyModal() {
+  var copyText = document.querySelector("#inputCopyModal");
+  var copyButton = document.querySelector("#btnCopyModal");
+  copyText.select();
+  document.execCommand("copy");
+  copyButton.innerText = "Copied!";
+}
+document.querySelector("#btnCopyModal").addEventListener("click", ()=>{
+  console.log("ttv")
+});
