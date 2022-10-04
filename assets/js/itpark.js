@@ -24,7 +24,7 @@ function copyModal() {
            var error1 = document.getElementById("error1")
            var error2 = document.getElementById("error2")
 
-           if (isNaN(inputPassItpark.value)) {
+           if (!isNaN(inputPassItpark.value)) {
                alertError2.style.display = "block";
                error2.textContent = "Mã pass chưa chính xác hoặc hết hạn. Mã pass cập nhật 10 phút 1 lần. Có thể bạn lấy đúng vào thời gian cập nhật."
                alertError2.hidden = false;
@@ -32,7 +32,7 @@ function copyModal() {
             error.textContent = ""
             alertError1.hidden = true;
         }
-           if (isNaN(inputName.value)) {
+           if (!isNaN(inputName.value)) {
                alertError1.style.display = "block";
                error1.textContent = "Họ và tên của bạn không được để trống!"
                alertError1.hidden = false;
